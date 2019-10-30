@@ -20,7 +20,7 @@ public class ReservationController {
     }
 
     @ApiOperation(value = "Détails d'une réservation par id")
-    @RequestMapping(value = {"/resevation/{id}"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/reservation/{id}"}, method = RequestMethod.GET)
     public Reservation reservationsById(@PathVariable int id) {
         return new ApiConsumer().getReservationById(id);
     }
